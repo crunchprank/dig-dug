@@ -3,7 +3,7 @@
 # dig-dug by crunchprank
 # A mass domain dig to csv tool.
 
-# Usage: ./dig.sh domains
+# Usage: ./dig-dug.sh domains
 # The 'domains' file should contain one domain per line
 
 # By default, the script uses a 300ms delay.
