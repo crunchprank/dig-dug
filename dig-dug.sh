@@ -21,7 +21,8 @@ do
   nameserver=`dig ns $domain +short`
 # Using 'tr' to replace new lines with commas, and strip horizontal whitespace.
 # Now with commas as delimiters, software can convert results to spreadsheet.
+  ipaddress_space=`echo -e "$ipaddress" | tr '\n' ',' | tr -d "[:blank:]"`
   nameserver_space=`echo -e "$nameserver" | tr '\n' ',' | tr -d "[:blank:]"`
 # Outputting to the filename output.csv
-  echo -e "$domain,$ipaddress,$nameserver_space" >> output.csv
+  echo -e "$domain,$ipaddress_space$nameserver_space" >> output.csv
 done < "$1"
