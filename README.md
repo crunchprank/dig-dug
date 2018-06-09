@@ -13,3 +13,6 @@ There are comments in the `dig-dug.sh` file, however here is the basic usage:
  
 ### Known Bugs?
 If a domain resolves to multiple IP addresses (due to them using some sort of load balancer or round-robin DNS), then it may take some manual column/cell arrangement once you open the CSV file. But nothing to strenuous. This is very common on domains using CloudFlare.
+
+### How is this fork different from original?
+The update in the script now makes separate text files and saves live and dead hosts accordingly.
